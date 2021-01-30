@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A5DF53725C5B0B90053FA1A /* SwiftPlantUMLXPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A5DF51C25C5ACD40053FA1A /* SwiftPlantUMLXPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A5DF54525C5B3480053FA1A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF54425C5B3480053FA1A /* main.swift */; };
+		8A5DF54925C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF54825C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift */; };
+		8A5DF54D25C5B3860053FA1A /* SwiftPlantUMLXPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF54C25C5B3860053FA1A /* SwiftPlantUMLXPCService.swift */; };
+		8A5DF55625C5B4140053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF54825C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift */; };
+		8A5DF55925C5B5D50053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5DF54825C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift */; };
+		8A5DF58625C5BD290053FA1A /* SwiftPlantUMLFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 8A5DF58525C5BD290053FA1A /* SwiftPlantUMLFramework */; };
+		8AF551E425C245AC007A7673 /* SwiftPlantUMLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF551E325C245AC007A7673 /* SwiftPlantUMLApp.swift */; };
+		8AF551E625C245AC007A7673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF551E525C245AC007A7673 /* ContentView.swift */; };
+		8AF551E825C245AF007A7673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF551E725C245AF007A7673 /* Assets.xcassets */; };
+		8AF551EB25C245AF007A7673 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF551EA25C245AF007A7673 /* Preview Assets.xcassets */; };
+		8AF551FB25C245D6007A7673 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF551FA25C245D6007A7673 /* Cocoa.framework */; };
+		8AF5520025C245D6007A7673 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF551FF25C245D6007A7673 /* SourceEditorExtension.swift */; };
+		8AF5520225C245D6007A7673 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF5520125C245D6007A7673 /* SourceEditorCommand.swift */; };
+		8AF5520725C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8AF551F825C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8AF5522425C326DC007A7673 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF5522325C326DC007A7673 /* XcodeKit.framework */; };
+		8AF5522525C326DC007A7673 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF5522325C326DC007A7673 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A5DF5A325C5E7A40053FA1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AF551D825C245AC007A7673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A5DF51B25C5ACD40053FA1A;
+			remoteInfo = SwiftPlantUMLXPCService;
+		};
+		8AF5520525C245D6007A7673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AF551D825C245AC007A7673 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF551F725C245D6007A7673;
+			remoteInfo = SwiftPlantUMLSourceEditorExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A5DF53425C5B0830053FA1A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				8A5DF53725C5B0B90053FA1A /* SwiftPlantUMLXPCService.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5520B25C245D6007A7673 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8AF5520725C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF5522625C326DC007A7673 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AF5522525C326DC007A7673 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A5DF51C25C5ACD40053FA1A /* SwiftPlantUMLXPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = SwiftPlantUMLXPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5DF52425C5ACD40053FA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A5DF54425C5B3480053FA1A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8A5DF54825C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlantUMLXPCServiceProtocol.swift; sourceTree = "<group>"; };
+		8A5DF54C25C5B3860053FA1A /* SwiftPlantUMLXPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlantUMLXPCService.swift; sourceTree = "<group>"; };
+		8AF551E025C245AC007A7673 /* SwiftPlantUML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlantUML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF551E325C245AC007A7673 /* SwiftPlantUMLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlantUMLApp.swift; sourceTree = "<group>"; };
+		8AF551E525C245AC007A7673 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8AF551E725C245AF007A7673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AF551EA25C245AF007A7673 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8AF551EC25C245AF007A7673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF551ED25C245AF007A7673 /* SwiftPlantUML.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftPlantUML.entitlements; sourceTree = "<group>"; };
+		8AF551F825C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftPlantUMLSourceEditorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF551FA25C245D6007A7673 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8AF551FF25C245D6007A7673 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		8AF5520125C245D6007A7673 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		8AF5520325C245D6007A7673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF5520425C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftPlantUMLSourceEditorExtension.entitlements; sourceTree = "<group>"; };
+		8AF5522325C326DC007A7673 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A5DF51925C5ACD40053FA1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5DF58625C5BD290053FA1A /* SwiftPlantUMLFramework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF551DD25C245AC007A7673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF551F525C245D6007A7673 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5522425C326DC007A7673 /* XcodeKit.framework in Frameworks */,
+				8AF551FB25C245D6007A7673 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A5DF51D25C5ACD40053FA1A /* SwiftPlantUMLXPCService */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DF52425C5ACD40053FA1A /* Info.plist */,
+				8A5DF54425C5B3480053FA1A /* main.swift */,
+				8A5DF54825C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift */,
+				8A5DF54C25C5B3860053FA1A /* SwiftPlantUMLXPCService.swift */,
+			);
+			path = SwiftPlantUMLXPCService;
+			sourceTree = "<group>";
+		};
+		8AF551D725C245AC007A7673 = {
+			isa = PBXGroup;
+			children = (
+				8AF551E225C245AC007A7673 /* SwiftPlantUML */,
+				8AF551FE25C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension */,
+				8A5DF51D25C5ACD40053FA1A /* SwiftPlantUMLXPCService */,
+				8AF551F925C245D6007A7673 /* Frameworks */,
+				8AF551E125C245AC007A7673 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AF551E125C245AC007A7673 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AF551E025C245AC007A7673 /* SwiftPlantUML.app */,
+				8AF551F825C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.appex */,
+				8A5DF51C25C5ACD40053FA1A /* SwiftPlantUMLXPCService.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AF551E225C245AC007A7673 /* SwiftPlantUML */ = {
+			isa = PBXGroup;
+			children = (
+				8AF551E325C245AC007A7673 /* SwiftPlantUMLApp.swift */,
+				8AF551E525C245AC007A7673 /* ContentView.swift */,
+				8AF551E725C245AF007A7673 /* Assets.xcassets */,
+				8AF551EC25C245AF007A7673 /* Info.plist */,
+				8AF551ED25C245AF007A7673 /* SwiftPlantUML.entitlements */,
+				8AF551E925C245AF007A7673 /* Preview Content */,
+			);
+			path = SwiftPlantUML;
+			sourceTree = "<group>";
+		};
+		8AF551E925C245AF007A7673 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8AF551EA25C245AF007A7673 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8AF551F925C245D6007A7673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AF5522325C326DC007A7673 /* XcodeKit.framework */,
+				8AF551FA25C245D6007A7673 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AF551FE25C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				8AF551FF25C245D6007A7673 /* SourceEditorExtension.swift */,
+				8AF5520125C245D6007A7673 /* SourceEditorCommand.swift */,
+				8AF5520325C245D6007A7673 /* Info.plist */,
+				8AF5520425C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.entitlements */,
+			);
+			path = SwiftPlantUMLSourceEditorExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A5DF51B25C5ACD40053FA1A /* SwiftPlantUMLXPCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A5DF52B25C5ACD40053FA1A /* Build configuration list for PBXNativeTarget "SwiftPlantUMLXPCService" */;
+			buildPhases = (
+				8A5DF51825C5ACD40053FA1A /* Sources */,
+				8A5DF51925C5ACD40053FA1A /* Frameworks */,
+				8A5DF51A25C5ACD40053FA1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPlantUMLXPCService;
+			packageProductDependencies = (
+				8A5DF58525C5BD290053FA1A /* SwiftPlantUMLFramework */,
+			);
+			productName = SwiftPlantUMLXPCService;
+			productReference = 8A5DF51C25C5ACD40053FA1A /* SwiftPlantUMLXPCService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		8AF551DF25C245AC007A7673 /* SwiftPlantUML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF551F025C245AF007A7673 /* Build configuration list for PBXNativeTarget "SwiftPlantUML" */;
+			buildPhases = (
+				8AF551DC25C245AC007A7673 /* Sources */,
+				8AF551DD25C245AC007A7673 /* Frameworks */,
+				8AF551DE25C245AC007A7673 /* Resources */,
+				8AF5520B25C245D6007A7673 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AF5520625C245D6007A7673 /* PBXTargetDependency */,
+			);
+			name = SwiftPlantUML;
+			packageProductDependencies = (
+			);
+			productName = SwiftPlantUML;
+			productReference = 8AF551E025C245AC007A7673 /* SwiftPlantUML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AF551F725C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF5520825C245D6007A7673 /* Build configuration list for PBXNativeTarget "SwiftPlantUMLSourceEditorExtension" */;
+			buildPhases = (
+				8AF551F425C245D6007A7673 /* Sources */,
+				8AF551F525C245D6007A7673 /* Frameworks */,
+				8AF551F625C245D6007A7673 /* Resources */,
+				8AF5522625C326DC007A7673 /* Embed Frameworks */,
+				8A5DF53425C5B0830053FA1A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A5DF5A425C5E7A40053FA1A /* PBXTargetDependency */,
+			);
+			name = SwiftPlantUMLSourceEditorExtension;
+			packageProductDependencies = (
+			);
+			productName = SwiftPlantUMLSourceEditorExtension;
+			productReference = 8AF551F825C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AF551D825C245AC007A7673 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8A5DF51B25C5ACD40053FA1A = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					8AF551DF25C245AC007A7673 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8AF551F725C245D6007A7673 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 8AF551DB25C245AC007A7673 /* Build configuration list for PBXProject "SwiftPlantUML" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AF551D725C245AC007A7673;
+			packageReferences = (
+				8AF5520E25C246DC007A7673 /* XCRemoteSwiftPackageReference "SwiftPlantUML" */,
+			);
+			productRefGroup = 8AF551E125C245AC007A7673 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF551DF25C245AC007A7673 /* SwiftPlantUML */,
+				8AF551F725C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension */,
+				8A5DF51B25C5ACD40053FA1A /* SwiftPlantUMLXPCService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A5DF51A25C5ACD40053FA1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF551DE25C245AC007A7673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF551EB25C245AF007A7673 /* Preview Assets.xcassets in Resources */,
+				8AF551E825C245AF007A7673 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF551F625C245D6007A7673 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A5DF51825C5ACD40053FA1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A5DF54925C5B3780053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift in Sources */,
+				8A5DF54D25C5B3860053FA1A /* SwiftPlantUMLXPCService.swift in Sources */,
+				8A5DF54525C5B3480053FA1A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF551DC25C245AC007A7673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF551E625C245AC007A7673 /* ContentView.swift in Sources */,
+				8A5DF55925C5B5D50053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift in Sources */,
+				8AF551E425C245AC007A7673 /* SwiftPlantUMLApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF551F425C245D6007A7673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF5520025C245D6007A7673 /* SourceEditorExtension.swift in Sources */,
+				8A5DF55625C5B4140053FA1A /* SwiftPlantUMLXPCServiceProtocol.swift in Sources */,
+				8AF5520225C245D6007A7673 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A5DF5A425C5E7A40053FA1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A5DF51B25C5ACD40053FA1A /* SwiftPlantUMLXPCService */;
+			targetProxy = 8A5DF5A325C5E7A40053FA1A /* PBXContainerItemProxy */;
+		};
+		8AF5520625C245D6007A7673 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF551F725C245D6007A7673 /* SwiftPlantUMLSourceEditorExtension */;
+			targetProxy = 8AF5520525C245D6007A7673 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A5DF52925C5ACD40053FA1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftPlantUMLXPCService",
+				);
+				INFOPLIST_FILE = SwiftPlantUMLXPCService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLXPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8A5DF52A25C5ACD40053FA1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftPlantUMLXPCService",
+				);
+				INFOPLIST_FILE = SwiftPlantUMLXPCService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLXPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8AF551EE25C245AF007A7673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AF551EF25C245AF007A7673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8AF551F125C245AF007A7673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftPlantUML/SwiftPlantUML.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftPlantUML/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftPlantUML/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8AF551F225C245AF007A7673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftPlantUML/SwiftPlantUML.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftPlantUML/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftPlantUML/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8AF5520925C245D6007A7673 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftPlantUMLSourceEditorExtension/SwiftPlantUMLSourceEditorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SwiftPlantUMLSourceEditorExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLSourceEditorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8AF5520A25C245D6007A7673 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftPlantUMLSourceEditorExtension/SwiftPlantUMLSourceEditorExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SwiftPlantUMLSourceEditorExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLSourceEditorExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A5DF52B25C5ACD40053FA1A /* Build configuration list for PBXNativeTarget "SwiftPlantUMLXPCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A5DF52925C5ACD40053FA1A /* Debug */,
+				8A5DF52A25C5ACD40053FA1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF551DB25C245AC007A7673 /* Build configuration list for PBXProject "SwiftPlantUML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF551EE25C245AF007A7673 /* Debug */,
+				8AF551EF25C245AF007A7673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF551F025C245AF007A7673 /* Build configuration list for PBXNativeTarget "SwiftPlantUML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF551F125C245AF007A7673 /* Debug */,
+				8AF551F225C245AF007A7673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF5520825C245D6007A7673 /* Build configuration list for PBXNativeTarget "SwiftPlantUMLSourceEditorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF5520925C245D6007A7673 /* Debug */,
+				8AF5520A25C245D6007A7673 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AF5520E25C246DC007A7673 /* XCRemoteSwiftPackageReference "SwiftPlantUML" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoEidinger/SwiftPlantUML";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A5DF58525C5BD290053FA1A /* SwiftPlantUMLFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AF5520E25C246DC007A7673 /* XCRemoteSwiftPackageReference "SwiftPlantUML" */;
+			productName = SwiftPlantUMLFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8AF551D825C245AC007A7673 /* Project object */;
+}

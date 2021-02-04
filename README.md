@@ -2,6 +2,7 @@
     <img src="./SwiftPlantUMLApp/Assets.xcassets/AppIcon.appiconset/128.png" width="100" max-width="50%" alt="SwiftPlantUML" />
 </p>
 
+![Build](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/workflows/Build/badge.svg)
 [![Swift 5.3](https://img.shields.io/badge/swift-5.3-orange.svg?style=flat)](#)
 [![Twitter](https://img.shields.io/badge/twitter-@MarcoEidinger-blue.svg)](http://twitter.com/MarcoEidinger)
 # SwiftPlantUML-Xcode-Extension

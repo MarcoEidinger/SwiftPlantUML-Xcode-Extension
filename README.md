@@ -24,10 +24,10 @@ This Source Editor Extension makes use of [SwiftPlantUML](https://github.com/Mar
 
 - Download latest *SwiftPlantUML* package from the [Releases](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases).
 - Copy *SwiftPlantUML* to your *Applications* folder.
-- Launch *SwiftPlantUML* once. You can close it immediately afterwards.
+- Launch *SwiftPlantUML* once. You can close it immediately afterwards (i.e. Quit from Dock).
 - Go to <kbd>System Preferences</kbd> > <kbd>Extensions</kbd> > <kbd>Xcode Source Editor</kbd> > select <kbd>SwiftPlantUML</kbd>
 
-![Lines Sorter Xcode Extension - Installation](.assets/installation.png)
+![SwiftPlantUML Xcode Extension - Installation](.assets/installation.png)
 
 ## Technicla Details
 

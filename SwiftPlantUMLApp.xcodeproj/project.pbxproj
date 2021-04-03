@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A319170261911B900540446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31916F261911B900540446 /* AppDelegate.swift */; };
+		8A3191742619123F00540446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3191732619123F00540446 /* ViewController.swift */; };
+		8A3191792619124B00540446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3191772619124B00540446 /* Main.storyboard */; };
 		8A73D8CC25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D8CB25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift */; };
 		8A73D8CE25CAE974008DDEA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D8CD25CAE974008DDEA3 /* ContentView.swift */; };
 		8A73D8D025CAE978008DDEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A73D8CF25CAE978008DDEA3 /* Assets.xcassets */; };
@@ -97,6 +100,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A31916F261911B900540446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A3191732619123F00540446 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A3191782619124B00540446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A73D8C825CAE974008DDEA3 /* SwiftPlantUMLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlantUMLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A73D8CB25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlantUMLAppApp.swift; sourceTree = "<group>"; };
 		8A73D8CD25CAE974008DDEA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -170,6 +176,9 @@
 		8A73D8CA25CAE974008DDEA3 /* SwiftPlantUMLApp */ = {
 			isa = PBXGroup;
 			children = (
+				8A31916F261911B900540446 /* AppDelegate.swift */,
+				8A3191732619123F00540446 /* ViewController.swift */,
+				8A3191772619124B00540446 /* Main.storyboard */,
 				8A73D8CB25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift */,
 				8A73D8CD25CAE974008DDEA3 /* ContentView.swift */,
 				8A73D8CF25CAE978008DDEA3 /* Assets.xcassets */,
@@ -332,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A3191792619124B00540446 /* Main.storyboard in Resources */,
 				8A73D8D325CAE978008DDEA3 /* Preview Assets.xcassets in Resources */,
 				8A73D8D025CAE978008DDEA3 /* Assets.xcassets in Resources */,
 			);
@@ -358,7 +368,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A319170261911B900540446 /* AppDelegate.swift in Sources */,
 				8A73D8CE25CAE974008DDEA3 /* ContentView.swift in Sources */,
+				8A3191742619123F00540446 /* ViewController.swift in Sources */,
 				8A73D8CC25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +414,17 @@
 			targetProxy = 8A73D92525CAEB2B008DDEA3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A3191772619124B00540446 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3191782619124B00540446 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8A73D8D625CAE978008DDEA3 /* Debug */ = {
@@ -537,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -562,7 +585,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

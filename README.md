@@ -29,7 +29,7 @@ This Source Editor Extension makes use of [SwiftPlantUML](https://github.com/Mar
 
 ![SwiftPlantUML Xcode Extension - Installation](.assets/installation.png)
 
-## Technicla Details
+## Technical Details
 
 This Source Editor Extension makes use of XPC service to run the app sandboxed and use `SwiftPlantUML` (and its dependency `SourceKitten`). Source Editor Extensions using `SourceKitten` (either directly or indirectly) have to either run in a non-sandboxed app (and could not be distributed via the App Store) or use XPC service to outsource the use of `SourceKitten` to a different process.
 

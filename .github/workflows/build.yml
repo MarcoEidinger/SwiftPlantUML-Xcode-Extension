@@ -12,7 +12,10 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-lates, macOS-10.15]
 
     steps:
     - uses: actions/checkout@v2

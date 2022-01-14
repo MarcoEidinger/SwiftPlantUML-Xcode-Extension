@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1EFEF42735DEC000BD6F69 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFEF32735DEC000BD6F69 /* Utils.swift */; };
+		8A30356F279BA55700042D19 /* PreferencesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30356E279BA55700042D19 /* PreferencesCommand.swift */; };
 		8A319170261911B900540446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31916F261911B900540446 /* AppDelegate.swift */; };
 		8A3191742619123F00540446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3191732619123F00540446 /* ViewController.swift */; };
 		8A3191792619124B00540446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3191772619124B00540446 /* Main.storyboard */; };
+		8A42F198279B6B95003BCDB4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A42F197279B6B95003BCDB4 /* SettingsView.swift */; };
 		8A73D8CC25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D8CB25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift */; };
 		8A73D8CE25CAE974008DDEA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D8CD25CAE974008DDEA3 /* ContentView.swift */; };
 		8A73D8D025CAE978008DDEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A73D8CF25CAE978008DDEA3 /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 		8A9E73BF25CAEBAF00327AD1 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */; };
 		8A9E73CA25CAEE2B00327AD1 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E425CAE9AA008DDEA3 /* XcodeKit.framework */; };
 		8A9E73CB25CAEE2B00327AD1 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E425CAE9AA008DDEA3 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A9F8E68273ED22700D29025 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFEF32735DEC000BD6F69 /* Utils.swift */; };
+		8A9F8E6E273EECF300D29025 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F8E6D273EECF300D29025 /* SettingsModel.swift */; };
+		8A9F8E6F273EECF300D29025 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F8E6D273EECF300D29025 /* SettingsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,9 +106,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8A1EFEF32735DEC000BD6F69 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8A30356E279BA55700042D19 /* PreferencesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesCommand.swift; sourceTree = "<group>"; };
 		8A31916F261911B900540446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A3191732619123F00540446 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A3191782619124B00540446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A42F197279B6B95003BCDB4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8A73D8C825CAE974008DDEA3 /* SwiftPlantUMLApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlantUMLApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A73D8CB25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlantUMLAppApp.swift; sourceTree = "<group>"; };
 		8A73D8CD25CAE974008DDEA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +131,8 @@
 		8A73D91325CAEA78008DDEA3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceProtocol.swift; sourceTree = "<group>"; };
 		8A73D91D25CAEA9E008DDEA3 /* XPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCService.swift; sourceTree = "<group>"; };
+		8A9F8E69273ED6D300D29025 /* XPCService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XPCService.entitlements; sourceTree = "<group>"; };
+		8A9F8E6D273EECF300D29025 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +192,8 @@
 				8A3191772619124B00540446 /* Main.storyboard */,
 				8A73D8CB25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift */,
 				8A73D8CD25CAE974008DDEA3 /* ContentView.swift */,
+				8A42F197279B6B95003BCDB4 /* SettingsView.swift */,
+				8A9F8E6A273EECBC00D29025 /* Shared */,
 				8A73D8CF25CAE978008DDEA3 /* Assets.xcassets */,
 				8A73D8D425CAE978008DDEA3 /* Info.plist */,
 				8A73D8D525CAE978008DDEA3 /* SwiftPlantUMLApp.entitlements */,
@@ -213,6 +226,7 @@
 				8A73D8E925CAE9AA008DDEA3 /* GenDiagramInBrowser.swift */,
 				8A73D8EB25CAE9AA008DDEA3 /* Info.plist */,
 				8A73D8EC25CAE9AA008DDEA3 /* SourceEditorExtension.entitlements */,
+				8A30356E279BA55700042D19 /* PreferencesCommand.swift */,
 			);
 			path = SourceEditorExtension;
 			sourceTree = "<group>";
@@ -220,12 +234,22 @@
 		8A73D8FB25CAE9DD008DDEA3 /* XPCService */ = {
 			isa = PBXGroup;
 			children = (
+				8A9F8E69273ED6D300D29025 /* XPCService.entitlements */,
 				8A73D90225CAE9DD008DDEA3 /* Info.plist */,
 				8A73D91325CAEA78008DDEA3 /* main.swift */,
 				8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */,
 				8A73D91D25CAEA9E008DDEA3 /* XPCService.swift */,
 			);
 			path = XPCService;
+			sourceTree = "<group>";
+		};
+		8A9F8E6A273EECBC00D29025 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8A9F8E6D273EECF300D29025 /* SettingsModel.swift */,
+				8A1EFEF32735DEC000BD6F69 /* Utils.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,10 +392,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A42F198279B6B95003BCDB4 /* SettingsView.swift in Sources */,
 				8A319170261911B900540446 /* AppDelegate.swift in Sources */,
 				8A73D8CE25CAE974008DDEA3 /* ContentView.swift in Sources */,
 				8A3191742619123F00540446 /* ViewController.swift in Sources */,
 				8A73D8CC25CAE974008DDEA3 /* SwiftPlantUMLAppApp.swift in Sources */,
+				8A9F8E6E273EECF300D29025 /* SettingsModel.swift in Sources */,
+				8A1EFEF42735DEC000BD6F69 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A30356F279BA55700042D19 /* PreferencesCommand.swift in Sources */,
 				8A73D8E825CAE9AA008DDEA3 /* SourceEditorExtension.swift in Sources */,
 				8A9E73BF25CAEBAF00327AD1 /* XPCServiceProtocol.swift in Sources */,
 				8A73D8EA25CAE9AA008DDEA3 /* GenDiagramInBrowser.swift in Sources */,
@@ -390,8 +418,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A73D91925CAEA8F008DDEA3 /* XPCServiceProtocol.swift in Sources */,
+				8A9F8E6F273EECF300D29025 /* SettingsModel.swift in Sources */,
 				8A73D91E25CAEA9E008DDEA3 /* XPCService.swift in Sources */,
 				8A73D91425CAEA78008DDEA3 /* main.swift in Sources */,
+				8A9F8E68273ED22700D29025 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,10 +579,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftPlantUMLApp/SwiftPlantUMLApp.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPlantUMLApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -563,9 +593,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -577,10 +608,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftPlantUMLApp/SwiftPlantUMLApp.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPlantUMLApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -591,9 +622,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -602,10 +634,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SourceEditorExtension/SourceEditorExtension.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
@@ -614,9 +646,10 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLSourceEditorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -626,10 +659,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SourceEditorExtension/SourceEditorExtension.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
@@ -638,9 +671,10 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLSourceEditorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -650,10 +684,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = XPCService/XPCService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XPCService/Info.plist;
@@ -662,9 +697,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -675,10 +711,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_ENTITLEMENTS = XPCService/XPCService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XPCService/Info.plist;
@@ -687,9 +724,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};

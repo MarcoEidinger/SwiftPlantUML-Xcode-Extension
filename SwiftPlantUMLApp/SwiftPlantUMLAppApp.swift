@@ -1,10 +1,14 @@
 import SwiftUI
 
-struct SwiftPlantUMLAppApp: App {
-    @available(OSX 11.0, *)
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+// @main
+// struct SwiftPlantUMLAppApp: App {
+//    @StateObject private var mainState = ContentViewModel()
+//
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//                .environmentObject(mainState)
+//                .frame(width: 800, height: 650)
+//        }
+//    }
+// }

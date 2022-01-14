@@ -36,6 +36,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Open editable diagram in browser</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).PreferencesCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_MODULE_NAME).PreferencesCommand</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Preferences</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

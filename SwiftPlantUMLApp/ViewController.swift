@@ -5,7 +5,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let swiftUIView = NSHostingView(rootView: ContentView())
+        let swiftUIView = NSHostingView(rootView: ContentView().environmentObject(ContentViewModel()))
         swiftUIView.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(swiftUIView)

@@ -1,3 +1,13 @@
+# [1.2.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.2.0)
+
+## Bug Fixes
+
+- [X] Diagram in browser will open correctly as invalid prefix `type=png&plantuml=` in script was removed.
+
+## Internal Dependencies
+
+uses [SwiftPlantUML@0.5.2](https://github.com/MarcoEidinger/SwiftPlantUML/releases/tag/0.5.2)
+
 # [1.2.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.2.0)
 
 ## Features

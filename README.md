@@ -29,6 +29,29 @@ This Source Editor Extension makes use of [SwiftPlantUML](https://github.com/Mar
 
 ![SwiftPlantUML Xcode Extension - Installation](.assets/installation.png)
 
+## Troubleshooting
+
+### The command "Open editable diagram in browser" is still busy
+
+Xcode Source Code Extension initialization might take up ~ 30 seconds on initial launch.
+
+If the prompt does not appear within 60 seconds 
+
+![image](https://user-images.githubusercontent.com/37135317/118424310-f77dd000-b701-11eb-9b59-cd3c964e1885.png)
+
+then check for a crash report related to XPC service in Console app of your MacOS.
+
+<img width="1726" alt="CrashReportXPCServiceExample" src="https://user-images.githubusercontent.com/4176826/134083329-722a101a-4ec6-428b-9ee5-bcffec0784a8.png">
+
+If you see such crash report related to `fatal error: Loading sourcekitd.framework/Versions/A/sourcekitd failed` please check the installation path of Xcode. If it's installed under `/Applications/Xcode.app`, please run:
+
+```
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
+
+If it's installed elsewhere, please replace the `/Applications/Xcode.app` path in the command above with the location where you've installed Xcode.
+
+
 ## Technical Details
 
 This Source Editor Extension makes use of XPC service to run the app sandboxed and use `SwiftPlantUML` (and its dependency `SourceKitten`). Source Editor Extensions using `SourceKitten` (either directly or indirectly) have to either run in a non-sandboxed app (and could not be distributed via the App Store) or use XPC service to outsource the use of `SourceKitten` to a different process.

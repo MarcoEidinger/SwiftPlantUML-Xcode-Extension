@@ -1,4 +1,14 @@
-# [1.2.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.2.0)
+# [1.2.2](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.2.2)
+
+## Improvements
+
+- [X] Faster launch of diagram in browser (also no longer that pesky leading `.` in the diagram textual description).
+
+## Internal Dependencies
+
+uses [SwiftPlantUML@0.6.0](https://github.com/MarcoEidinger/SwiftPlantUML/releases/tag/0.6.0)
+
+# [1.2.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.2.1)
 
 ## Bug Fixes
 

@@ -1,3 +1,25 @@
+# [1.3.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.3.0)
+
+## Features
+
+- [X] Able to set preferences to influence which code shall be considered for diagram generation.
+
+  <img width="512" alt="Preferences - Elements" src="https://user-images.githubusercontent.com/4176826/150644620-19f13392-08f2-4dba-b95a-0c9a002a5272.png">
+
+  <img width="512" alt="Preferences - Members" src="https://user-images.githubusercontent.com/4176826/150644626-7a566c4b-d795-432c-9a2e-ec29d2c1ba42.png">
+
+  <img width="512" alt="Preferences - Others" src="https://user-images.githubusercontent.com/4176826/150644631-e0b653bf-45cb-4f02-9dd0-3fb05bbac9e8.png">
+
+## Improvements
+
+- [X] New Look & Feel (incl. logo)
+
+  <img width="712" alt="SwiftPlantUML user interface" src="https://user-images.githubusercontent.com/4176826/150644606-a4eb8681-d9dc-46d9-87b1-4522ed88668e.png">
+
+## Internal Dependencies
+
+uses [SwiftPlantUML@0.6.0](https://github.com/MarcoEidinger/SwiftPlantUML/releases/tag/0.6.0)
+
 # [1.2.2](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.2.2)
 
 ## Improvements

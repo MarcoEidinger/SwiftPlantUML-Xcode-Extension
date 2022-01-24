@@ -20,10 +20,21 @@ This Source Editor Extension makes use of [SwiftPlantUML](https://github.com/Mar
 
 ![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
 
-## Installation
+## Install
 
+Homebrew
+
+```bash
+brew install swiftplantumlapp
+```
+
+<img width="565" alt="Installation through Homebrew" src="https://user-images.githubusercontent.com/4176826/150718736-f94d9e81-076e-4254-906f-be68518d0450.png">
+
+*Alternative*
 - Download latest *SwiftPlantUML* package from the [Releases](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases).
 - Copy *SwiftPlantUML* to your *Applications* folder.
+
+## Enable Extension
 - Launch *SwiftPlantUML*.
 
   <img width="712" alt="SwiftPlantUML user interface" src="https://user-images.githubusercontent.com/4176826/150644606-a4eb8681-d9dc-46d9-87b1-4522ed88668e.png">
@@ -32,7 +43,9 @@ This Source Editor Extension makes use of [SwiftPlantUML](https://github.com/Mar
 
   ![SwiftPlantUML Xcode Extension - Installation](.assets/installation.png)
 
-- *Optional*: set preferences
+## Configure
+
+*Optional*:
 
   <img width="512" alt="Preferences - Elements" src="https://user-images.githubusercontent.com/4176826/150644620-19f13392-08f2-4dba-b95a-0c9a002a5272.png">
 

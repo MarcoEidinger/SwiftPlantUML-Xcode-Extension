@@ -1,3 +1,26 @@
+# [1.4.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.4.0)
+
+## Features
+
+- [X] Able to merge extensions into main type.
+  
+  <img width="1000" alt="merged_extensions" src="https://user-images.githubusercontent.com/4176826/211223667-f886efbc-d557-4f41-8c76-40d5cbcf1aef.png">
+
+- [X] Able to choose a theme
+  
+  <img width="1090" alt="theme_sketchy_outline" src="https://user-images.githubusercontent.com/4176826/211223672-750c0a67-d1ae-4e20-80a1-0f02190c8c76.png">
+
+## Improvements
+
+- [X] Show Nested Types
+  
+  <img width="1060" alt="nestedTypes" src="https://user-images.githubusercontent.com/4176826/211223671-595e771c-740e-4da6-ba92-fc6f9e72321b.png">
+- [X] Several Bug Fixes
+
+## Internal Dependencies
+
+uses [SwiftPlantUML@0.7.0](https://github.com/MarcoEidinger/SwiftPlantUML/releases/tag/0.7.0)
+
 # [1.3.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.3.0)
 
 ## Features

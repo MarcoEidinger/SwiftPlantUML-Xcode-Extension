@@ -1,61 +1,59 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "SourceKitten",
-        "repositoryURL": "https://github.com/jpsim/SourceKitten",
-        "state": {
-          "branch": null,
-          "revision": "558628392eb31d37cb251cfe626c53eafd330df6",
-          "version": "0.31.1"
-        }
-      },
-      {
-        "package": "swift-argument-parser",
-        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
-        "state": {
-          "branch": null,
-          "revision": "d2930e8fcf9c33162b9fcc1d522bc975e2d4179b",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "SwiftPlantUML",
-        "repositoryURL": "https://github.com/MarcoEidinger/SwiftPlantUML",
-        "state": {
-          "branch": null,
-          "revision": "0ca974652eb597a3fe2811e5146fdb9626fb390b",
-          "version": "0.6.0"
-        }
-      },
-      {
-        "package": "SwiftyBeaver",
-        "repositoryURL": "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
-        "state": {
-          "branch": null,
-          "revision": "2c039501d6eeb4d4cd4aec4a8d884ad28862e044",
-          "version": "1.9.5"
-        }
-      },
-      {
-        "package": "SWXMLHash",
-        "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
-        "state": {
-          "branch": null,
-          "revision": "a4931e5c3bafbedeb1601d3bb76bbe835c6d475a",
-          "version": "5.0.1"
-        }
-      },
-      {
-        "package": "Yams",
-        "repositoryURL": "https://github.com/jpsim/Yams.git",
-        "state": {
-          "branch": null,
-          "revision": "9003d51672e516cc59297b7e96bff1dfdedcb4ea",
-          "version": "4.0.4"
-        }
+  "pins" : [
+    {
+      "identity" : "sourcekitten",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/SourceKitten",
+      "state" : {
+        "revision" : "558628392eb31d37cb251cfe626c53eafd330df6",
+        "version" : "0.31.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "d2930e8fcf9c33162b9fcc1d522bc975e2d4179b",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swiftplantuml",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MarcoEidinger/SwiftPlantUML.git",
+      "state" : {
+        "revision" : "6135cf9e9dd666be2f5cf646cc393a7e157c3e70",
+        "version" : "0.7.0"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "state" : {
+        "revision" : "2c039501d6eeb4d4cd4aec4a8d884ad28862e044",
+        "version" : "1.9.5"
+      }
+    },
+    {
+      "identity" : "swxmlhash",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/drmohundro/SWXMLHash.git",
+      "state" : {
+        "revision" : "a4931e5c3bafbedeb1601d3bb76bbe835c6d475a",
+        "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "yams",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jpsim/Yams.git",
+      "state" : {
+        "revision" : "9003d51672e516cc59297b7e96bff1dfdedcb4ea",
+        "version" : "4.0.4"
+      }
+    }
+  ],
+  "version" : 2
 }

@@ -2,11 +2,17 @@ import Foundation
 import SwiftPlantUMLFramework
 
 @objc class XPCService: NSObject, XPCServiceProtocol {
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.theme.key, defaultValue: "")
+    var theme: String
+    
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showGenerics.key, defaultValue: true)
     var showGenerics: Bool
-
-    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showExtensions.key, defaultValue: true)
-    var showExtensions: Bool
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showNestedTypes.key, defaultValue: true)
+    var showNestedTypes: Bool
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showExtensionsValue.key, defaultValue: ExtensionVisualization.default.rawValue)
+    var showExtensionsValue: String
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showEmptyMembers.key, defaultValue: true)
     var showEmptyMembers: Bool
@@ -34,14 +40,12 @@ import SwiftPlantUMLFramework
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelPrivate.key, defaultValue: true)
     var showElementsWithAccessLevelPrivate: Bool
-
-    func generateDiagram(from content: String, completionHandler: @escaping (() -> Void)) {
-        let config = Configuration(elements: ElementOptions(havingAccessLevel: showElementsWithAccessLevel(), showMembersWithAccessLevel: showMembersWithAccessLevel(), showGenerics: showGenerics, showExtensions: showExtensions, showMemberAccessLevelAttribute: true, exclude: nil), hideShowCommands: hideShowCommands())
-        ClassDiagramGenerator().generate(from: content, with: config)
-        completionHandler()
+    
+    var extensionVisualization: ExtensionVisualization {
+        ExtensionVisualization(rawValue: showExtensionsValue) ?? .all
     }
-
-    private func showElementsWithAccessLevel() -> [AccessLevel] {
+    
+    var showElementsWithAccessLevel: [AccessLevel] {
         var showElementsWithAccessLevel: [AccessLevel] = []
         if showElementsWithAccessLevelOpen {
             showElementsWithAccessLevel.append(.open)
@@ -57,8 +61,8 @@ import SwiftPlantUMLFramework
         }
         return showElementsWithAccessLevel
     }
-
-    private func showMembersWithAccessLevel() -> [AccessLevel] {
+    
+    var showMembersWithAccessLevel: [AccessLevel] {
         var showMembersWithAccessLevel: [AccessLevel] = []
         if showMembersWithAccessLevelOpen {
             showMembersWithAccessLevel.append(.open)
@@ -74,12 +78,30 @@ import SwiftPlantUMLFramework
         }
         return showMembersWithAccessLevel
     }
-
-    private func hideShowCommands() -> [String] {
+    
+    var hideShowCommands: [String] {
         var hideShowCommands = [String]()
         if !showEmptyMembers {
             hideShowCommands.append("hide empty members")
         }
         return hideShowCommands
+    }
+    
+    var selectedTheme: Theme? {
+        var selTheme: Theme? = nil
+        if !theme.isEmpty {
+            selTheme = Theme.__directive__(theme)
+        }
+        return selTheme
+    }
+
+    func generateDiagram(from content: String, completionHandler: @escaping (() -> Void)) {
+        let showNestedTypes = showNestedTypes
+        let extensionVisualization = extensionVisualization
+        let selectedTheme = selectedTheme
+        
+        let config = Configuration(elements: ElementOptions(havingAccessLevel: showElementsWithAccessLevel, showMembersWithAccessLevel: showMembersWithAccessLevel, showNestedTypes: showNestedTypes, showGenerics: showGenerics, showExtensions: extensionVisualization, showMemberAccessLevelAttribute: true, exclude: nil), hideShowCommands: hideShowCommands, theme: selectedTheme)
+        ClassDiagramGenerator().generate(from: content, with: config)
+        completionHandler()
     }
 }

@@ -1,11 +1,17 @@
 import Foundation
 
 struct SettingsModel {
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.theme.key, defaultValue: "")
+    var theme: String
+    
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showGenerics.key, defaultValue: true)
     var showGenerics: Bool
-
-    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showExtensions.key, defaultValue: true)
-    var showExtensions: Bool
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showNestedTypes.key, defaultValue: true)
+    var showNestedTypes: Bool
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showExtensionsValue.key, defaultValue: "all")
+    var showExtensionsValue: String
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showEmptyMembers.key, defaultValue: true)
     var showEmptyMembers: Bool
@@ -35,8 +41,10 @@ struct SettingsModel {
     var showElementsWithAccessLevelPrivate: Bool
 
     mutating func resetDefaults() {
+        theme = ""
         showGenerics = true
-        showExtensions = true
+        showNestedTypes = true
+        showExtensionsValue = "all"
         showEmptyMembers = true
         showMembersWithAccessLevelOpen = true
         showMembersWithAccessLevelPublic = true

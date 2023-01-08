@@ -39,8 +39,10 @@ public extension UserDefaults {
 
 public enum UserDefaultsKeys {
     public enum SettingsKeys: String, CaseIterable {
+        case theme
         case showGenerics
-        case showExtensions
+        case showNestedTypes
+        case showExtensionsValue
         case showEmptyMembers
         case showMembersWithAccessLevelOpen
         case showMembersWithAccessLevelPublic

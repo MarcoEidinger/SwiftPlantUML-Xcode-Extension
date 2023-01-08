@@ -1,5 +1,15 @@
 import Foundation
 import SwiftUI
+import SwiftPlantUMLFramework
+
+extension Theme {
+    public static var chooseable: [String] {
+        var values: [String] = []
+        values.append("")
+        values.append(contentsOf: Theme.preferred.map { $0.rawValue })
+        return values
+    }
+}
 
 struct SettingsView: View {
     @EnvironmentObject private var mainState: ContentViewModel
@@ -60,8 +70,26 @@ struct SettingsView: View {
                 }
                 if selectedConfigurationScope == .others {
                     VStack(alignment: .leading) {
+                        HStack {
+                            Spacer(minLength: 19)
+                            Picker("Theme", selection: $mainState.settings.theme) {
+                                ForEach(Theme.chooseable, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                            Spacer(minLength: 150)
+                        }
+                        HStack {
+                            Spacer(minLength: 19)
+                            Picker("Show extensions", selection: $mainState.settings.showExtensionsValue) {
+                                Text(ExtensionVisualization.all.rawValue).tag(ExtensionVisualization.all.rawValue)
+                                Text(ExtensionVisualization.merged.rawValue).tag(ExtensionVisualization.merged.rawValue)
+                                Text(ExtensionVisualization.none.rawValue).tag(ExtensionVisualization.none.rawValue)
+                            }
+                            Spacer(minLength: 150)
+                        }
                         Toggle("Show generics", isOn: $mainState.settings.showGenerics)
-                        Toggle("Show extensions", isOn: $mainState.settings.showExtensions)
+                        Toggle("Show nested types", isOn: $mainState.settings.showNestedTypes)
                     }
                 }
             }

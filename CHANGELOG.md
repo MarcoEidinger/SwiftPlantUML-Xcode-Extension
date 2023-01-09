@@ -1,3 +1,9 @@
+# [1.4.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.4.1)
+
+## Bug Fixes
+
+- Fix previous installation error `“SwiftPlantUMLApp” is damaged and can’t be opened. You should move it to the Bin.` ([Issue #20](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/issues/20))
+
 # [1.4.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.4.0)
 
 ## Features

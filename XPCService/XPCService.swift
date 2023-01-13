@@ -104,4 +104,14 @@ import SwiftPlantUMLFramework
         ClassDiagramGenerator().generate(from: content, with: config)
         completionHandler()
     }
+    
+    func generateDiagram(for paths: [String], completionHandler: @escaping (() -> Void)) {
+        let showNestedTypes = showNestedTypes
+        let extensionVisualization = extensionVisualization
+        let selectedTheme = selectedTheme
+        
+        let config = Configuration(elements: ElementOptions(havingAccessLevel: showElementsWithAccessLevel, showMembersWithAccessLevel: showMembersWithAccessLevel, showNestedTypes: showNestedTypes, showGenerics: showGenerics, showExtensions: extensionVisualization, showMemberAccessLevelAttribute: true, exclude: nil), hideShowCommands: hideShowCommands, theme: selectedTheme)
+        ClassDiagramGenerator().generate(for: paths, with: config)
+        completionHandler()
+    }
 }

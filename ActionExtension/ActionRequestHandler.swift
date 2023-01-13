@@ -38,24 +38,24 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
             print("remote proxy error: \(error)")
         }
         let service = connection.remoteObjectProxyWithErrorHandler(handler) as! XPCServiceProtocol
-        
+        var paths: [String] = []
         for attachment in inputAttachments {
             attachment.loadInPlaceFileRepresentation(forTypeIdentifier: "public.swift-source") { url, inPlace, error in
                 print("yoo")
                 guard let url = url else { return }
                 var path = url.path
-                service.generateDiagram(for: [path]) {
-                    print("Done")
+                paths.append(path)
+                if paths.count == inputAttachments.count {
+                    service.generateDiagram(for: paths) {
+                        print("Done")
+                        context.completeRequest(returningItems: [inputItem], completionHandler: nil)
+                    }
                 }
 //                service.generateDiagram(from: "struct Meep {}") {
 //                    print("done")
 //                }
             }
         }
-        
-        
-            
-        context.completeRequest(returningItems: [inputItem], completionHandler: nil)
     }
 
 }

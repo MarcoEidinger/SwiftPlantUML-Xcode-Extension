@@ -5,7 +5,6 @@
 //  Created by Marco Eidinger on 1/13/23.
 //
 
-import ApplicationServices
 import Foundation
 import XPCService
 import SwiftPlantUMLFramework
@@ -24,13 +23,17 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
     }
     
     func beginRequest(with context: NSExtensionContext) {
+        // For an Action Extension there will only ever be one extension item.
         precondition(context.inputItems.count == 1)
         guard let inputItem = context.inputItems[0] as? NSExtensionItem
             else { preconditionFailure("Expected an extension item") }
+        
+        // The extension item's attachments hold the set of files to process.
         guard let inputAttachments = inputItem.attachments
             else { preconditionFailure("Expected a valid array of attachments") }
         precondition(inputAttachments.isEmpty == false, "Expected at least one attachment")
         
+        // The output of this extension is the existing swift files
         guard let inputAttachments = inputItem.attachments
             else { preconditionFailure("Expected a valid array of attachments") }
         
@@ -39,21 +42,25 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
         }
         let service = connection.remoteObjectProxyWithErrorHandler(handler) as! XPCServiceProtocol
         var paths: [String] = []
+        
+        // Use a dispatch group to synchronise asynchronous calls to loadInPlaceFileRepresentation.
+        let dispatchGroup = DispatchGroup()
+        
         for attachment in inputAttachments {
+            dispatchGroup.enter()
+            
             attachment.loadInPlaceFileRepresentation(forTypeIdentifier: "public.swift-source") { url, inPlace, error in
-                print("yoo")
-                guard let url = url else { return }
-                var path = url.path
-                paths.append(path)
-                if paths.count == inputAttachments.count {
-                    service.generateDiagram(for: paths) {
-                        print("Done")
-                        context.completeRequest(returningItems: [inputItem], completionHandler: nil)
-                    }
+                if let url = url {
+                    paths.append(url.path)
                 }
-//                service.generateDiagram(from: "struct Meep {}") {
-//                    print("done")
-//                }
+
+                dispatchGroup.leave()
+            }
+        }
+        
+        dispatchGroup.notify(queue: DispatchQueue.main) {
+            service.generateDiagram(for: paths) {
+                context.completeRequest(returningItems: [inputItem], completionHandler: nil)
             }
         }
     }

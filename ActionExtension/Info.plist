@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>icon</string>
+	<string></string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
@@ -15,7 +15,7 @@
         SUBQUERY (
             $extensionItem.attachments,
             $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.swift-source"
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.swift-source&quot;
         ).@count == $extensionItem.attachments.@count
 ).@count == 1</string>
 			<key>NSExtensionServiceAllowsFinderPreviewItem</key>
@@ -23,13 +23,13 @@
 			<key>NSExtensionServiceAllowsTouchBarItem</key>
 			<true/>
 			<key>NSExtensionServiceFinderPreviewIconName</key>
-			<string>NSActionTemplate</string>
+			<string>ActionIcon</string>
 			<key>NSExtensionServiceRoleType</key>
 			<string>NSExtensionServiceRoleTypeEditor</string>
 			<key>NSExtensionServiceTouchBarBezelColorName</key>
 			<string>TouchBarBezel</string>
 			<key>NSExtensionServiceTouchBarIconName</key>
-			<string>NSActionTemplate</string>
+			<string>ActionIcon</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.services</string>

@@ -11,7 +11,6 @@
 		1919C9CA296B48FC00804361 /* SwiftPlantUMLFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 1919C9C9296B48FC00804361 /* SwiftPlantUMLFramework */; };
 		192CDFCF2971F5F400CF914F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E225CAE9AA008DDEA3 /* Cocoa.framework */; };
 		192CDFD22971F5F400CF914F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192CDFD12971F5F400CF914F /* Media.xcassets */; };
-		192CDFD42971F5F400CF914F /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 192CDFD32971F5F400CF914F /* icon.icns */; };
 		192CDFD62971F5F400CF914F /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */; };
 		192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 192CDFCE2971F5F400CF914F /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		192CDFE02971F60B00CF914F /* XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A73D8FA25CAE9DD008DDEA3 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -142,7 +141,6 @@
 /* Begin PBXFileReference section */
 		192CDFCE2971F5F400CF914F /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		192CDFD12971F5F400CF914F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		192CDFD32971F5F400CF914F /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
 		192CDFD72971F5F400CF914F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		192CDFD82971F5F400CF914F /* ActionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActionExtension.entitlements; sourceTree = "<group>"; };
@@ -217,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				192CDFD12971F5F400CF914F /* Media.xcassets */,
-				192CDFD32971F5F400CF914F /* icon.icns */,
 				192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */,
 				192CDFD72971F5F400CF914F /* Info.plist */,
 				192CDFD82971F5F400CF914F /* ActionExtension.entitlements */,
@@ -462,7 +459,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				192CDFD22971F5F400CF914F /* Media.xcassets in Resources */,
-				192CDFD42971F5F400CF914F /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,7 +969,7 @@
 			repositoryURL = "https://github.com/MarcoEidinger/SwiftPlantUML.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.7.0;
+				minimumVersion = 0.7.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

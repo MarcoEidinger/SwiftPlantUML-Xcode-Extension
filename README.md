@@ -5,20 +5,28 @@
 ![Build](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/workflows/Build/badge.svg)
 [![Swift 5.3](https://img.shields.io/badge/swift-5.3-orange.svg?style=flat)](#)
 [![Twitter](https://img.shields.io/badge/twitter-@MarcoEidinger-blue.svg)](http://twitter.com/MarcoEidinger)
-# SwiftPlantUML-Xcode-Extension
+# SwiftPlantUML.app
 
-Generate and view a class diagram for Swift code in Xcode with this extension.
+A macOS application to generate and view a class diagram for Swift code in Xcode with this extension.
 
-This Source Editor Extension makes use of [SwiftPlantUML](https://github.com/MarcoEidinger/SwiftPlantUML) Swift package. You can also use `SwiftPlantUML` as a command-line tool.
+The Source Editor Extension (as well as the Action extension) makes use of [SwiftPlantUML](https://github.com/MarcoEidinger/SwiftPlantUML) Swift package.
+
+To generate a large diagram from a project with Swift files across folders then I recommend using `SwiftPlantUML` as a command-line tool.
 
 ## Features
 
+### Xcode
 - [X] 📊 Create class diagram from Swift file    
-- [X] 🔦 Create class diagram from selected Swift code    
+- [X] 🔦 Create class diagram from selected Swift code
+
+![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
+
+### Finder
+- [X] 📊 Create class diagram from Swift file(s)  
 
 ## Example
 
-![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
+??? ![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
 
 ## Install
 
@@ -39,13 +47,19 @@ brew install swiftplantumlapp
 
   <img width="712" alt="SwiftPlantUML user interface" src="https://user-images.githubusercontent.com/4176826/150644606-a4eb8681-d9dc-46d9-87b1-4522ed88668e.png">
   
-- Enable extension in <kbd>System Preferences</kbd> > <kbd>Extensions</kbd> > <kbd>Xcode Source Editor</kbd> > select <kbd>SwiftPlantUML</kbd>
+- To use in **Xcode**: enable extension in <kbd>System Preferences</kbd> > <kbd>Extensions</kbd> > <kbd>Xcode Source Editor</kbd> > select <kbd>SwiftPlantUML</kbd>
+
+  ![SwiftPlantUML Xcode Extension - Installation](.assets/installation.png)
+
+- To use in **Finder**: enable extension in <kbd>System Preferences</kbd> > <kbd>Extensions</kbd> > <kbd>Finder</kbd> > select <kbd>Open Swift Class Diagram</kbd>
 
   ![SwiftPlantUML Xcode Extension - Installation](.assets/installation.png)
 
 ## Configure
 
 *Optional*:
+
+TODO
 
   <img width="512" alt="Preferences - Elements" src="https://user-images.githubusercontent.com/4176826/150644620-19f13392-08f2-4dba-b95a-0c9a002a5272.png">
 

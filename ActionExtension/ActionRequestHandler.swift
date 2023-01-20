@@ -7,7 +7,6 @@
 
 import Foundation
 import XPCService
-import SwiftPlantUMLFramework
 
 class ActionRequestHandler: NSObject, NSExtensionRequestHandling {
 

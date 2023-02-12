@@ -1,3 +1,12 @@
+# [1.5.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.5.0)
+
+## Features
+
+- Select one or more Swift files in your finder and then use a quick action to view a class diagram in your browser.
+
+  <img width="605" alt="Finder Action" src="https://user-images.githubusercontent.com/4176826/218337460-f40085b7-423d-4e62-97fa-edddcd6591d9.png">
+
+
 # [1.4.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.4.1)
 
 ## Bug Fixes

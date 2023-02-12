@@ -7,9 +7,11 @@
 [![Twitter](https://img.shields.io/badge/twitter-@MarcoEidinger-blue.svg)](http://twitter.com/MarcoEidinger)
 # SwiftPlantUML.app
 
-A macOS application to generate and view a class diagram for Swift code in Xcode with this extension.
+Generate and view a class diagram for Swift code in Xcode or from the Finder.
 
-The Source Editor Extension (as well as the Action extension) makes use of [SwiftPlantUML](https://github.com/MarcoEidinger/SwiftPlantUML) Swift package.
+Use the hosting macOS application to configure the diagram visualization.
+
+The Source Editor Extension (as well as the Action extension) makes use of [`SwiftPlantUML`](https://github.com/MarcoEidinger/SwiftPlantUML) Swift package.
 
 To generate a large diagram from a project with Swift files across folders then I recommend using `SwiftPlantUML` as a command-line tool.
 
@@ -61,14 +63,11 @@ brew install swiftplantumlapp
 
 *Optional*:
 
-TODO
-
   <img width="512" alt="Preferences - Elements" src="https://user-images.githubusercontent.com/4176826/150644620-19f13392-08f2-4dba-b95a-0c9a002a5272.png">
 
   <img width="512" alt="Preferences - Members" src="https://user-images.githubusercontent.com/4176826/150644626-7a566c4b-d795-432c-9a2e-ec29d2c1ba42.png">
 
-  <img width="512" alt="Preferences - Others" src="https://user-images.githubusercontent.com/4176826/150644631-e0b653bf-45cb-4f02-9dd0-3fb05bbac9e8.png">
-
+  <img width="512" alt="Preferences - Others" src="https://user-images.githubusercontent.com/4176826/218329326-6953799c-faa0-4de0-93a3-9d5856587e8c.png">
 
 ## Troubleshooting
 

@@ -11,25 +11,10 @@ on:
 
 jobs:
   build:
-    name: Xcode ${{ matrix.xcode }}
-    runs-on: ${{ matrix.runner-image }}
-    env:
-      DEVELOPER_DIR: "/Applications/Xcode_${{ matrix.xcode }}.app/Contents/Developer"
-    strategy:
-      fail-fast: false
-      matrix:
-        # https://github.com/actions/runner-images/blob/main/images/macos/macos-12-Readme.md#xcode
-        # https://github.com/actions/runner-images/blob/main/images/macos/macos-11-Readme.md#xcode
-        # https://github.com/actions/runner-images/blob/main/images/macos/macos-10.15-Readme.md
-        include:
-          - xcode: "14.2"
-            runner-image: macOS-12
-          - xcode: "13.0"
-            runner-image: macOS-11
-          - xcode: "12.4"
-            runner-image: macos-10.15
+
+    runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     - name: Build
       run: xcodebuild -scheme SwiftPlantUMLApp -sdk macosx CODE_SIGN_IDENTITY="" clean build

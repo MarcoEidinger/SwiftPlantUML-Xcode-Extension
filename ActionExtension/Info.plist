@@ -15,13 +15,13 @@
         SUBQUERY (
             $extensionItem.attachments,
             $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.swift-source"
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO &quot;public.swift-source&quot;
         ).@count == $extensionItem.attachments.@count
 ).@count == 1</string>
 			<key>NSExtensionServiceAllowsFinderPreviewItem</key>
 			<true/>
 			<key>NSExtensionServiceAllowsTouchBarItem</key>
-			<true/>
+			<false/>
 			<key>NSExtensionServiceFinderPreviewIconName</key>
 			<string>Symbol</string>
 			<key>NSExtensionServiceRoleType</key>

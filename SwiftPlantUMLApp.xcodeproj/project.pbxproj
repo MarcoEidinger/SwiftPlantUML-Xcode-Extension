@@ -590,7 +590,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ActionExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Open Swift Class Diagram";
+				INFOPLIST_KEY_CFBundleDisplayName = "View Swift Class Diagram";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Marco Eidinger. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,7 +620,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ActionExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Open Swift Class Diagram";
+				INFOPLIST_KEY_CFBundleDisplayName = "View Swift Class Diagram";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Marco Eidinger. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

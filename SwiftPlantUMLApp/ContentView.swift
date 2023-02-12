@@ -34,7 +34,11 @@ struct ContentView: View {
                     }.padding(5)
                     HStack {
                         Text("Step 2:")
-                        Text("Enable extension in Extensions -> Xcode Source Editor").bold()
+                        Text("Enable: Xcode Source Editor -> SwiftPlantUML").bold()
+                    }.padding(5)
+                    HStack {
+                        Text("Step 2:").hidden()
+                        Text("Enable: Finder -> View Swift Class Diagram").bold()
                     }.padding(5)
                     HStack {
                         Text("Step 3:")

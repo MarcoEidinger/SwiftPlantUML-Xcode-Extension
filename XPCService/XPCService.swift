@@ -96,12 +96,22 @@ import SwiftPlantUMLFramework
     }
 
     func generateDiagram(from content: String, completionHandler: @escaping (() -> Void)) {
+        let config = assembleConfig()
+        ClassDiagramGenerator().generate(from: content, with: config)
+        completionHandler()
+    }
+    
+    func generateDiagram(for paths: [String], completionHandler: @escaping (() -> Void)) {
+        let config = assembleConfig()
+        ClassDiagramGenerator().generate(for: paths, with: config, presentedBy: PlantUMLBrowserPresenter(format: .svg))
+        completionHandler()
+    }
+    
+    func assembleConfig() -> Configuration {
         let showNestedTypes = showNestedTypes
         let extensionVisualization = extensionVisualization
         let selectedTheme = selectedTheme
         
-        let config = Configuration(elements: ElementOptions(havingAccessLevel: showElementsWithAccessLevel, showMembersWithAccessLevel: showMembersWithAccessLevel, showNestedTypes: showNestedTypes, showGenerics: showGenerics, showExtensions: extensionVisualization, showMemberAccessLevelAttribute: true, exclude: nil), hideShowCommands: hideShowCommands, theme: selectedTheme)
-        ClassDiagramGenerator().generate(from: content, with: config)
-        completionHandler()
+        return Configuration(elements: ElementOptions(havingAccessLevel: showElementsWithAccessLevel, showMembersWithAccessLevel: showMembersWithAccessLevel, showNestedTypes: showNestedTypes, showGenerics: showGenerics, showExtensions: extensionVisualization, showMemberAccessLevelAttribute: true, exclude: nil), hideShowCommands: hideShowCommands, theme: selectedTheme)
     }
 }

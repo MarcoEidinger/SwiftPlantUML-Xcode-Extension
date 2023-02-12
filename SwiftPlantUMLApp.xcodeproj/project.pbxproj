@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1919C9C8296B48EA00804361 /* SwiftPlantUMLFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 1919C9C7296B48EA00804361 /* SwiftPlantUMLFramework */; };
 		1919C9CA296B48FC00804361 /* SwiftPlantUMLFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 1919C9C9296B48FC00804361 /* SwiftPlantUMLFramework */; };
+		192CDFCF2971F5F400CF914F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E225CAE9AA008DDEA3 /* Cocoa.framework */; };
+		192CDFD22971F5F400CF914F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192CDFD12971F5F400CF914F /* Media.xcassets */; };
+		192CDFD62971F5F400CF914F /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */; };
+		192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 192CDFCE2971F5F400CF914F /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		192CDFE02971F60B00CF914F /* XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A73D8FA25CAE9DD008DDEA3 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		192CDFE52971F6DB00CF914F /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */; };
+		19E902A029737244002212BA /* SwiftPlantUMLFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 19E9029F29737244002212BA /* SwiftPlantUMLFramework */; };
 		8A1EFEF42735DEC000BD6F69 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFEF32735DEC000BD6F69 /* Utils.swift */; };
 		8A30356F279BA55700042D19 /* PreferencesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30356E279BA55700042D19 /* PreferencesCommand.swift */; };
 		8A319170261911B900540446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A31916F261911B900540446 /* AppDelegate.swift */; };
@@ -37,6 +44,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		192CDFD92971F5F400CF914F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A73D8C025CAE974008DDEA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192CDFCD2971F5F400CF914F;
+			remoteInfo = ActionExtension;
+		};
+		192CDFE32971F68700CF914F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A73D8C025CAE974008DDEA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A73D8F925CAE9DD008DDEA3;
+			remoteInfo = XPCService;
+		};
 		8A73D8ED25CAE9AA008DDEA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A73D8C025CAE974008DDEA3 /* Project object */;
@@ -61,12 +82,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		192CDFDF2971F5FF00CF914F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				192CDFE02971F60B00CF914F /* XPCService.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A73D8F325CAE9AA008DDEA3 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed App Extensions */,
 				8A73D8EF25CAE9AA008DDEA3 /* SourceEditorExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -107,6 +139,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		192CDFCE2971F5F400CF914F /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		192CDFD12971F5F400CF914F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		192CDFD72971F5F400CF914F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192CDFD82971F5F400CF914F /* ActionExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActionExtension.entitlements; sourceTree = "<group>"; };
 		8A1EFEF32735DEC000BD6F69 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		8A30356E279BA55700042D19 /* PreferencesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesCommand.swift; sourceTree = "<group>"; };
 		8A31916F261911B900540446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +174,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		192CDFCB2971F5F400CF914F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E902A029737244002212BA /* SwiftPlantUMLFramework in Frameworks */,
+				192CDFCF2971F5F400CF914F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A73D8C525CAE974008DDEA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,12 +211,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192CDFD02971F5F400CF914F /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				192CDFD12971F5F400CF914F /* Media.xcassets */,
+				192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */,
+				192CDFD72971F5F400CF914F /* Info.plist */,
+				192CDFD82971F5F400CF914F /* ActionExtension.entitlements */,
+			);
+			path = ActionExtension;
+			sourceTree = "<group>";
+		};
 		8A73D8BF25CAE974008DDEA3 = {
 			isa = PBXGroup;
 			children = (
 				8A73D8CA25CAE974008DDEA3 /* SwiftPlantUMLApp */,
 				8A73D8E625CAE9AA008DDEA3 /* SourceEditorExtension */,
 				8A73D8FB25CAE9DD008DDEA3 /* XPCService */,
+				192CDFD02971F5F400CF914F /* ActionExtension */,
 				8A73D8E125CAE9AA008DDEA3 /* Frameworks */,
 				8A73D8C925CAE974008DDEA3 /* Products */,
 			);
@@ -182,6 +240,7 @@
 				8A73D8C825CAE974008DDEA3 /* SwiftPlantUMLApp.app */,
 				8A73D8E025CAE9AA008DDEA3 /* SourceEditorExtension.appex */,
 				8A73D8FA25CAE9DD008DDEA3 /* XPCService.xpc */,
+				192CDFCE2971F5F400CF914F /* ActionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +316,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		192CDFCD2971F5F400CF914F /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192CDFDE2971F5F400CF914F /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				192CDFCA2971F5F400CF914F /* Sources */,
+				192CDFCB2971F5F400CF914F /* Frameworks */,
+				192CDFCC2971F5F400CF914F /* Resources */,
+				192CDFDF2971F5FF00CF914F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				192CDFE42971F68700CF914F /* PBXTargetDependency */,
+			);
+			name = ActionExtension;
+			packageProductDependencies = (
+				19E9029F29737244002212BA /* SwiftPlantUMLFramework */,
+			);
+			productName = ActionExtension;
+			productReference = 192CDFCE2971F5F400CF914F /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8A73D8C725CAE974008DDEA3 /* SwiftPlantUMLApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A73D8D825CAE978008DDEA3 /* Build configuration list for PBXNativeTarget "SwiftPlantUMLApp" */;
@@ -272,6 +353,7 @@
 			dependencies = (
 				8A73D8EE25CAE9AA008DDEA3 /* PBXTargetDependency */,
 				8A73D90425CAE9DD008DDEA3 /* PBXTargetDependency */,
+				192CDFDA2971F5F400CF914F /* PBXTargetDependency */,
 			);
 			name = SwiftPlantUMLApp;
 			packageProductDependencies = (
@@ -329,9 +411,12 @@
 		8A73D8C025CAE974008DDEA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					192CDFCD2971F5F400CF914F = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					8A73D8C725CAE974008DDEA3 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -362,12 +447,21 @@
 			targets = (
 				8A73D8C725CAE974008DDEA3 /* SwiftPlantUMLApp */,
 				8A73D8DF25CAE9AA008DDEA3 /* SourceEditorExtension */,
+				192CDFCD2971F5F400CF914F /* ActionExtension */,
 				8A73D8F925CAE9DD008DDEA3 /* XPCService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		192CDFCC2971F5F400CF914F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192CDFD22971F5F400CF914F /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A73D8C625CAE974008DDEA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +489,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		192CDFCA2971F5F400CF914F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192CDFD62971F5F400CF914F /* ActionRequestHandler.swift in Sources */,
+				192CDFE52971F6DB00CF914F /* XPCServiceProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8A73D8C425CAE974008DDEA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -435,6 +538,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		192CDFDA2971F5F400CF914F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 192CDFCD2971F5F400CF914F /* ActionExtension */;
+			targetProxy = 192CDFD92971F5F400CF914F /* PBXContainerItemProxy */;
+		};
+		192CDFE42971F68700CF914F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A73D8F925CAE9DD008DDEA3 /* XPCService */;
+			targetProxy = 192CDFE32971F68700CF914F /* PBXContainerItemProxy */;
+		};
 		8A73D8EE25CAE9AA008DDEA3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8A73D8DF25CAE9AA008DDEA3 /* SourceEditorExtension */;
@@ -464,6 +577,66 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		192CDFDC2971F5F400CF914F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = ActionExtension/ActionExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "View Swift Class Diagram";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Marco Eidinger. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		192CDFDD2971F5F400CF914F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = ActionExtension/ActionExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V66CC3AN6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "View Swift Class Diagram";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Marco Eidinger. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.5.0;
+				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLActionExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		8A73D8D625CAE978008DDEA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -600,7 +773,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -629,7 +802,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUML;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -653,7 +826,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLSourceEditorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -678,7 +851,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLSourceEditorExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -704,7 +877,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -731,7 +904,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = us.eidinger.SwiftPlantUMLXPCService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -743,6 +916,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		192CDFDE2971F5F400CF914F /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				192CDFDC2971F5F400CF914F /* Debug */,
+				192CDFDD2971F5F400CF914F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8A73D8C325CAE974008DDEA3 /* Build configuration list for PBXProject "SwiftPlantUMLApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -787,7 +969,7 @@
 			repositoryURL = "https://github.com/MarcoEidinger/SwiftPlantUML.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.7.0;
+				minimumVersion = 0.7.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -799,6 +981,11 @@
 			productName = SwiftPlantUMLFramework;
 		};
 		1919C9C9296B48FC00804361 /* SwiftPlantUMLFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1919C9C6296B48EA00804361 /* XCRemoteSwiftPackageReference "SwiftPlantUML" */;
+			productName = SwiftPlantUMLFramework;
+		};
+		19E9029F29737244002212BA /* SwiftPlantUMLFramework */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1919C9C6296B48EA00804361 /* XCRemoteSwiftPackageReference "SwiftPlantUML" */;
 			productName = SwiftPlantUMLFramework;

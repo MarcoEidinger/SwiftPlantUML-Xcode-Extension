@@ -22,11 +22,13 @@ To generate a large diagram from a project with Swift files across folders then 
 ![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
 
 ### Finder
-- [X] 📊 Create class diagram from Swift file(s)  
+- [X] 📊 Create class diagram from selected Swift file(s)  
+
+https://user-images.githubusercontent.com/4176826/218329052-b03ec650-d845-46a2-a31b-6d3817add52a.mp4
 
 ## Example
 
-??? ![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
+![SwiftPlantUML Xcode Extension - Usage Demo](.assets/usage.gif)
 
 ## Install
 

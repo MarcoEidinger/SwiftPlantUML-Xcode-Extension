@@ -1,3 +1,9 @@
+# [1.5.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.5.1)
+
+## Bug Fixes
+
+- Cannot define nested types in extensions and cannot extend nested types ([Issue #26](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/issues/26))
+
 # [1.5.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.5.0)
 
 ## Features

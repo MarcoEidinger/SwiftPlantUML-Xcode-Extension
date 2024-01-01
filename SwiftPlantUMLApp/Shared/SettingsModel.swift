@@ -21,6 +21,9 @@ struct SettingsModel {
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showMembersWithAccessLevelPublic.key, defaultValue: true)
     var showMembersWithAccessLevelPublic
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showMembersWithAccessLevelPackage.key, defaultValue: true)
+    var showMembersWithAccessLevelPackage
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showMembersWithAccessLevelInternal.key, defaultValue: true)
     var showMembersWithAccessLevelInternal
@@ -33,6 +36,9 @@ struct SettingsModel {
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelPublic.key, defaultValue: true)
     var showElementsWithAccessLevelPublic: Bool
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelPackage.key, defaultValue: true)
+    var showElementsWithAccessLevelPackage: Bool
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelInternal.key, defaultValue: true)
     var showElementsWithAccessLevelInternal: Bool
@@ -48,10 +54,12 @@ struct SettingsModel {
         showEmptyMembers = true
         showMembersWithAccessLevelOpen = true
         showMembersWithAccessLevelPublic = true
+        showMembersWithAccessLevelPackage = true
         showMembersWithAccessLevelInternal = true
         showMembersWithAccessLevelPrivate = true
         showElementsWithAccessLevelOpen = true
         showElementsWithAccessLevelPublic = true
+        showElementsWithAccessLevelPackage = true
         showElementsWithAccessLevelInternal = true
         showElementsWithAccessLevelPrivate = true
     }

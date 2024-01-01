@@ -46,10 +46,12 @@ public enum UserDefaultsKeys {
         case showEmptyMembers
         case showMembersWithAccessLevelOpen
         case showMembersWithAccessLevelPublic
+        case showMembersWithAccessLevelPackage
         case showMembersWithAccessLevelInternal
         case showMembersWithAccessLevelPrivate
         case showElementsWithAccessLevelOpen
         case showElementsWithAccessLevelPublic
+        case showElementsWithAccessLevelPackage
         case showElementsWithAccessLevelInternal
         case showElementsWithAccessLevelPrivate
 

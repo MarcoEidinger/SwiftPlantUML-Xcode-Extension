@@ -12,7 +12,7 @@
 		192CDFCF2971F5F400CF914F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E225CAE9AA008DDEA3 /* Cocoa.framework */; };
 		192CDFD22971F5F400CF914F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 192CDFD12971F5F400CF914F /* Media.xcassets */; };
 		192CDFD62971F5F400CF914F /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192CDFD52971F5F400CF914F /* ActionRequestHandler.swift */; };
-		192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 192CDFCE2971F5F400CF914F /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 192CDFCE2971F5F400CF914F /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		192CDFE02971F60B00CF914F /* XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A73D8FA25CAE9DD008DDEA3 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		192CDFE52971F6DB00CF914F /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */; };
 		19E902A029737244002212BA /* SwiftPlantUMLFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 19E9029F29737244002212BA /* SwiftPlantUMLFramework */; };
@@ -29,7 +29,7 @@
 		8A73D8E325CAE9AA008DDEA3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E225CAE9AA008DDEA3 /* Cocoa.framework */; };
 		8A73D8E825CAE9AA008DDEA3 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D8E725CAE9AA008DDEA3 /* SourceEditorExtension.swift */; };
 		8A73D8EA25CAE9AA008DDEA3 /* GenDiagramInBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D8E925CAE9AA008DDEA3 /* GenDiagramInBrowser.swift */; };
-		8A73D8EF25CAE9AA008DDEA3 /* SourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A73D8E025CAE9AA008DDEA3 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A73D8EF25CAE9AA008DDEA3 /* SourceEditorExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8A73D8E025CAE9AA008DDEA3 /* SourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8A73D90525CAE9DD008DDEA3 /* XPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 8A73D8FA25CAE9DD008DDEA3 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8A73D91425CAEA78008DDEA3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D91325CAEA78008DDEA3 /* main.swift */; };
 		8A73D91925CAEA8F008DDEA3 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */; };
@@ -37,7 +37,7 @@
 		8A73D92825CAEB4F008DDEA3 /* XPCService.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A73D8FA25CAE9DD008DDEA3 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8A9E73BF25CAEBAF00327AD1 /* XPCServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73D91825CAEA8F008DDEA3 /* XPCServiceProtocol.swift */; };
 		8A9E73CA25CAEE2B00327AD1 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E425CAE9AA008DDEA3 /* XcodeKit.framework */; };
-		8A9E73CB25CAEE2B00327AD1 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E425CAE9AA008DDEA3 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A9E73CB25CAEE2B00327AD1 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A73D8E425CAE9AA008DDEA3 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8A9F8E68273ED22700D29025 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFEF32735DEC000BD6F69 /* Utils.swift */; };
 		8A9F8E6E273EECF300D29025 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F8E6D273EECF300D29025 /* SettingsModel.swift */; };
 		8A9F8E6F273EECF300D29025 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9F8E6D273EECF300D29025 /* SettingsModel.swift */; };
@@ -92,16 +92,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A73D8F325CAE9AA008DDEA3 /* Embed App Extensions */ = {
+		8A73D8F325CAE9AA008DDEA3 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed App Extensions */,
-				8A73D8EF25CAE9AA008DDEA3 /* SourceEditorExtension.appex in Embed App Extensions */,
+				192CDFDB2971F5F400CF914F /* ActionExtension.appex in Embed Foundation Extensions */,
+				8A73D8EF25CAE9AA008DDEA3 /* SourceEditorExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8A73D90925CAE9DD008DDEA3 /* Embed XPC Services */ = {
@@ -345,7 +345,7 @@
 				8A73D8C425CAE974008DDEA3 /* Sources */,
 				8A73D8C525CAE974008DDEA3 /* Frameworks */,
 				8A73D8C625CAE974008DDEA3 /* Resources */,
-				8A73D8F325CAE9AA008DDEA3 /* Embed App Extensions */,
+				8A73D8F325CAE9AA008DDEA3 /* Embed Foundation Extensions */,
 				8A73D90925CAE9DD008DDEA3 /* Embed XPC Services */,
 			);
 			buildRules = (
@@ -411,8 +411,9 @@
 		8A73D8C025CAE974008DDEA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					192CDFCD2971F5F400CF914F = {
 						CreatedOnToolsVersion = 14.2;
@@ -586,6 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -616,6 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -671,9 +674,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -732,9 +737,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -763,6 +770,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPlantUMLApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -792,6 +800,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPlantUMLApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -818,6 +827,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
@@ -843,6 +853,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SourceEditorExtension/Info.plist;
@@ -869,6 +880,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XPCService/Info.plist;
@@ -896,6 +908,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6V66CC3AN6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = XPCService/Info.plist;

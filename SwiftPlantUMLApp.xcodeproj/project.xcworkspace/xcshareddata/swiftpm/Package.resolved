@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/MarcoEidinger/SwiftPlantUML.git",
       "state" : {
-        "revision" : "0e9a0a05d8c443145858ce42fedd55950e7b0040",
-        "version" : "0.7.5"
+        "revision" : "e2e93e026b0d1b4bd8947915e06d6ba5051b2da3",
+        "version" : "0.8.0"
       }
     },
     {

@@ -53,6 +53,7 @@ struct SettingsView: View {
                         VStack(alignment: .leading) {
                             Toggle("Open", isOn: $mainState.settings.showElementsWithAccessLevelOpen)
                             Toggle("Public", isOn: $mainState.settings.showElementsWithAccessLevelPublic)
+                            Toggle("Package", isOn: $mainState.settings.showElementsWithAccessLevelPackage)
                             Toggle("Internal", isOn: $mainState.settings.showElementsWithAccessLevelPrivate)
                             Toggle("Private", isOn: $mainState.settings.showElementsWithAccessLevelInternal)
                         }
@@ -64,6 +65,7 @@ struct SettingsView: View {
                         Text("having access level")
                         Toggle("Open", isOn: $mainState.settings.showMembersWithAccessLevelOpen)
                         Toggle("Public", isOn: $mainState.settings.showMembersWithAccessLevelPublic)
+                        Toggle("Package", isOn: $mainState.settings.showMembersWithAccessLevelPackage)
                         Toggle("Internal", isOn: $mainState.settings.showMembersWithAccessLevelInternal)
                         Toggle("Private", isOn: $mainState.settings.showMembersWithAccessLevelPrivate)
                     }

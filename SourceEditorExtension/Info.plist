@@ -52,6 +52,6 @@
 		<string>com.apple.dt.Xcode.extension.source-editor</string>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2021 Marco Eidinger. All rights reserved.</string>
+	<string>Copyright © 2021-2024 Marco Eidinger. All rights reserved.</string>
 </dict>
 </plist>

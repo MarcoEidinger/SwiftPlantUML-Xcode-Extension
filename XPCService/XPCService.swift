@@ -22,6 +22,9 @@ import SwiftPlantUMLFramework
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showMembersWithAccessLevelPublic.key, defaultValue: true)
     var showMembersWithAccessLevelPublic: Bool
+    
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showMembersWithAccessLevelPackage.key, defaultValue: true)
+    var showMembersWithAccessLevelPackage: Bool
 
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showMembersWithAccessLevelInternal.key, defaultValue: true)
     var showMembersWithAccessLevelInternal: Bool
@@ -35,6 +38,10 @@ import SwiftPlantUMLFramework
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelPublic.key, defaultValue: true)
     var showElementsWithAccessLevelPublic: Bool
 
+    @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelPackage.key, defaultValue: true)
+    var showElementsWithAccessLevelPackage: Bool
+
+    
     @UserDefaultsWrapper(UserDefaultsKeys.SettingsKeys.showElementsWithAccessLevelInternal.key, defaultValue: true)
     var showElementsWithAccessLevelInternal: Bool
 
@@ -53,6 +60,9 @@ import SwiftPlantUMLFramework
         if showElementsWithAccessLevelPublic {
             showElementsWithAccessLevel.append(.public)
         }
+        if showElementsWithAccessLevelPackage {
+            showElementsWithAccessLevel.append(.package)
+        }
         if showElementsWithAccessLevelInternal {
             showElementsWithAccessLevel.append(.internal)
         }
@@ -69,6 +79,9 @@ import SwiftPlantUMLFramework
         }
         if showMembersWithAccessLevelPublic {
             showMembersWithAccessLevel.append(.public)
+        }
+        if showMembersWithAccessLevelPackage {
+            showMembersWithAccessLevel.append(.package)
         }
         if showMembersWithAccessLevelInternal {
             showMembersWithAccessLevel.append(.internal)

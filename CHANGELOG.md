@@ -1,3 +1,13 @@
+# [1.6.0](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.6.0)
+
+## Features
+
+- support `package` access level ([SE-0386](https://github.com/apple/swift-evolution/blob/main/proposals/0386-package-access-modifier.md)) introduced in Swift 5.9
+
+## Internal Dependencies
+
+uses [SwiftPlantUML@0.8.0](https://github.com/MarcoEidinger/SwiftPlantUML/releases/tag/0.8.0)
+
 # [1.5.1](https://github.com/MarcoEidinger/SwiftPlantUML-Xcode-Extension/releases/tag/1.5.1)
 
 ## Bug Fixes
